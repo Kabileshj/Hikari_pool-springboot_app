@@ -8,11 +8,11 @@
         <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.kabilesh</groupId>
+    <artifactId>hikari_pool-springboot_app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>Demo project for Spring Boot</description>
+    <name>hikari_pool-springboot_app</name>
+    <description>Hikari_pool-springboot_app</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -67,6 +67,12 @@
             <groupId>org.openapitools</groupId>
             <artifactId>openapi-generator-maven-plugin</artifactId>
             <version>6.2.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-simple</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
@@ -213,7 +219,7 @@
                 <version>3.10.1</version>
             </plugin>
         </plugins>
-        <finalName>Hikari_pool-springboot_app</finalName>
+        <finalName>hikari_pool-springboot_app</finalName>
     </build>
 
 </project>
